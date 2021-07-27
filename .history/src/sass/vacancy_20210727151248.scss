@@ -1,0 +1,63 @@
+@import 'navbar';
+@import 'accordion';
+@import 'buttonsCategory';
+
+.vacancyWrapper {  
+    margin: 0 4.375rem;
+}
+
+.title {
+    width: 100%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18rem;
+    line-height: 79%;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+
+    background: linear-gradient(90deg, #7137FF, #BF99FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin: 8.4375rem 0 0 0;
+}
+
+.titleDesc {
+    margin: 4.8125rem 0;
+    width: 25rem;
+}
+.titleDesc__text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    color: #413954;
+}
+.mainPicture {
+    width: 100%;
+    height: 100%;
+}
+
+.category {
+    margin: 100px 0;
+}
+
+.category__button {
+    width: 7.25rem;
+    height: 2.625rem;
+    background-color: #EFEFEF;
+    border-radius: 93px;
+    margin-right: 25px;
+}
+
+// .category__button:hover {
+//     linear-gradient(90deg, #7137FF, #BF99FF);
+// }
+
+.category__button:focus {
+    background: linear-gradient(90deg, #7137FF, #BF99FF);
+    color: #fff
+}

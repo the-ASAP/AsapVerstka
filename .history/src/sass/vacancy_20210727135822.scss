@@ -1,0 +1,146 @@
+.vacancyWrapper {  
+    margin: 0 70px;
+}
+.navbar {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #7F7E82;
+}
+
+.menu {
+    width: 87%;
+    border-right: 2px solid #7F7E82;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu__block {
+    width: 620px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu__block__item {
+    color: #000;
+    margin-right: 50px;
+    font-family: Suisse Intl;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.startProject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13%;
+}
+.startProject__text {
+    color: #000;
+    font-family: Suisse Intl;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 288px;
+    line-height: 79%;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+
+    background: linear-gradient(90deg, #7137FF, #BF99FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin: 135px 0 0 0;
+}
+
+.titleDesc {
+    margin: 77px 0;
+    width: 400px;
+}
+.titleDesc__text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #413954;
+}
+.mainPicture {
+    height: 100%;
+}
+
+.category {
+    margin: 100px 0;
+}
+
+.category__button {
+    width: 116px;
+    height: 42px;
+    background-color: #EFEFEF;
+    border-radius: 93px;
+    margin-right: 25px;
+}
+
+// .category__button:hover {
+//     linear-gradient(90deg, #7137FF, #BF99FF);
+// }
+
+.category__button:focus {
+    background: linear-gradient(90deg, #7137FF, #BF99FF);
+    color: #fff
+}
+
+
+.accordion {
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    // margin: 0 70px;
+    height: 60px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px solid #7F7E82;
+    text-align: left;
+    transition: 0.5s;
+}
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.accordion__info {
+    padding: 20px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+}
+
+.accordion__info_active {
+    display: block;
+    max-height: 50px;
+}

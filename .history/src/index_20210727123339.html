@@ -15,7 +15,23 @@
 	
 	<!-- TYPE YOUR HTML HERE -->
 	<div class="vacancyWrapper">
-		@import "navbar.html"
+		<nav class="navbar">
+			<div class="menu">
+				<div class="menu__logo">
+					<img src="./img/logo.svg" alt="" />
+				</div>
+				<div class="menu__block">
+					<a href="/" class="menu__block__item">Услуги</a>
+					<a href="/" class="menu__block__item">О компании</a>
+					<a href="/" class="menu__block__item">Проекты</a>
+					<a href="/" class="menu__block__item">Статьи</a>
+					<a href="/" class="menu__block__item">Контакты</a>
+				</div>
+			</div>
+			<div class="startProject">
+				<a href="/" class="startProject__text">Начать проект</a>
+			</div>
+		</nav>
 
 		<h1 class="title">
 			Вакансии
@@ -31,16 +47,15 @@
 		</div>
 		<img src="/img/picture_1.png" alt="mainPicture" class="mainPicture" />
 
-		@import "buttonsCategory.html"
-
-		@import "accordion.html"
-		@import "accordion.html"
-		@import "accordion.html"
-		@import "accordion.html"
-		@import "accordion.html"
+		<div class="category">
+			<button type="button" class="category__buton">Дизайн</button>
+			<button type="button" class="category__buton">Front</button>
+			<button type="button" class="category__buton">Back</button>
+			<button type="button" class="category__buton">Офис</button>
+		</div>
 	</div>
 
 	<script src="vendors/js/jquery-3.5.1.min.js"></script>
-	<script src="vendors/js/vacancy.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

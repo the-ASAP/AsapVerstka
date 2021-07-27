@@ -2,7 +2,6 @@
 @import 'media';
 @import 'keyframes';
 @import 'mixins';
-@import 'vacancy';
 
 html {
     font-size: 16px;
@@ -16,7 +15,7 @@ html {
 body {
     font-family: $font; // FF MAIN
     cursor: default;
-    background-color: $bgc;
+    // background-color: $bgc;
     color: $gen;
     @extend %scrollbar;
 }
