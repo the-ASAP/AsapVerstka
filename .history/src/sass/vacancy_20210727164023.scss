@@ -1,0 +1,44 @@
+@import 'navbar';
+@import 'accordion';
+@import 'buttonsCategory';
+
+
+.main {
+    width: 100%;
+}
+
+.intro__title {
+    width: 100%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18rem;
+    line-height: 79%;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+
+    background: linear-gradient(90deg, #7137FF, #BF99FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin: 8.4375rem 0 0 0;
+}
+
+.intro__desc {
+    margin: 4.8125rem 0;
+    width: 25rem;
+}
+.intro__desc__text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    color: #413954;
+}
+.mainPicture {
+    width: 100%;
+    height: 100%;
+}
+

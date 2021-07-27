@@ -1,0 +1,114 @@
+.accordion {
+    margin-top: 5.3125rem;
+}
+.accordion__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    // margin: 0 70px;
+    height: 3.75rem;
+    background-color: #f5f5f5;
+    border: none;
+    border-bottom: 2px solid #CECECE;
+    text-align: left;
+    transition: 0.5s;
+}
+.accordion__button__text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 1.39;
+    color: #413954;
+}
+.accordion__button:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 0.9375rem;
+    color: #000;
+    float: right;
+    margin-left: 0.3125rem;
+}
+
+.accordion_active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.accordion__info {
+    background-color: #f5f5f5;;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+}
+
+.accordion__info_active {
+    display: block;
+    max-height: 100%;
+}
+
+.accordion__text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #413954;
+
+    margin-top: 3.125rem;
+}
+.accordion__text + .accordion__text {
+    margin: 0;
+}
+
+.accordion__subtitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: #413954;
+}
+.accordion__list {
+    li {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.2;
+        color: silver;
+    }
+}
+
+.accordion__text + .accordion__subtitle {
+    margin-top: 3.75rem;
+}
+.accordion__subtitle + .accordion__list {
+    margin-top: 1.25rem;
+}
+.accordion__list + .accordion__subtitle {
+    margin-top: 1.25rem;
+}
+
+.accordion__info__button {
+    width: 17.5rem;
+    height: 4.125rem;
+    background: linear-gradient(90deg, #7137FF, #BF99FF);
+    border: none;
+
+    margin: 5rem 0;
+}
+.accordion__info__button__text {
+    font-family: Suisse Intl;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 130.5%;
+
+    letter-spacing: 0.06em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
