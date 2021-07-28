@@ -6,7 +6,7 @@
   margin-top: 36px;
 }
 
-.profession__choice {
+.profession__tab {
   width: 7.25rem;
   height: 2.625rem;
   background-color: #EFEFEF;
@@ -52,7 +52,7 @@
   float: right;
 }
 
-.profession__accordion_active:after {
+.active:after {
   content: "-";
   /* Unicode character for "minus" sign (-) */
 }
@@ -147,7 +147,7 @@
 }
 
 .intro__desc {
-  max-width: 25rem;
+  max-width: 27rem;
   margin-top: 4.8125rem;
 }
 

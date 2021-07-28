@@ -53,7 +53,7 @@
     float: right;
 }
 
-.active:after {
+.profession__accordion .active:after {
     content: "-"; /* Unicode character for "minus" sign (-) */
 }
 
