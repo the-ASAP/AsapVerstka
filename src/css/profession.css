@@ -19,7 +19,7 @@
   color: #fff;
 }
 
-.profession__button {
+.profession__accordion {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +34,7 @@
   margin-top: 5.3125rem;
 }
 
-.profession__button__text {
+.profession__accordion p {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -43,16 +43,17 @@
   color: #413954;
 }
 
-.profession__button:after {
-  content: '\02795';
+.profession__accordion:after {
+  content: '+';
   /* Unicode character for "plus" sign (+) */
-  font-size: 0.9375rem;
-  color: #000;
+  color: #413954;
+  font-weight: 700;
+  font-size: 1.5rem;
   float: right;
 }
 
-.profession__button__active:after {
-  content: "\2796";
+.profession__accordion_active:after {
+  content: "-";
   /* Unicode character for "minus" sign (-) */
 }
 
@@ -115,7 +116,7 @@
   margin: 5rem 0;
 }
 
-.profession__endButton__text {
+.profession__endButton p {
   font-family: Suisse Intl;
   font-style: normal;
   font-weight: 600;

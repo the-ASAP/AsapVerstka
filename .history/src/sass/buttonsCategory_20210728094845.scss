@@ -1,0 +1,20 @@
+.profession__buttons {
+    margin-top: 6.25rem;
+}
+
+.profession__choice__button {
+    width: 7.25rem;
+    height: 2.625rem;
+    background-color: #EFEFEF;
+    border-radius: 93px;
+    margin-right: 1.5625rem;
+}
+
+// .profession__choice__button:hover {
+//     linear-gradient(90deg, #7137FF, #BF99FF);
+// }
+
+.profession__choice__button:focus {
+    background: linear-gradient(90deg, #7137FF, #BF99FF);
+    color: #fff
+}

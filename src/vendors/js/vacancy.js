@@ -1,14 +1,14 @@
-$('.accordion__button').click((event) => {
+$('.profession__accordion').click((event) => {
     const $accordionText = $(event.currentTarget).next()
 
-    if ( $(event.currentTarget).hasClass('accordion_button_sactive') ) {
-        $(event.currentTarget).removeClass('accordion_button_sactive') 
+    if ( $(event.currentTarget).hasClass('profession__accordion_active') ) {
+        $(event.currentTarget).removeClass('profession__accordion_active') 
         $accordionText.animate({
             height: 0,
         }, 500)
     }
     else {
-        $(event.currentTarget).addClass('accordion_button_sactive')
+        $(event.currentTarget).addClass('profession__accordion_active')
         $accordionText.animate({
             height: $accordionText.get(0).scrollHeight
         }, 500, function() {

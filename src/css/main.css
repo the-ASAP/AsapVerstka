@@ -172,15 +172,28 @@ body::-webkit-scrollbar-thumb {
   line-height: 1.25rem;
 }
 
-.accordion {
-  margin-top: 5.3125rem;
+.profession {
+  margin-top: 6.25rem;
 }
 
-.accordion + .accordion {
-  margin-top: 2.25rem;
+.profession + .profession {
+  margin-top: 36px;
 }
 
-.accordion__button {
+.profession__choice {
+  width: 7.25rem;
+  height: 2.625rem;
+  background-color: #EFEFEF;
+  border-radius: 93px;
+  margin-right: 1.5625rem;
+}
+
+.profession__choice:focus {
+  background: linear-gradient(90deg, #7137FF, #BF99FF);
+  color: #fff;
+}
+
+.profession__accordion {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -192,9 +205,10 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 2px solid #CECECE;
   text-align: left;
   transition: 0.5s;
+  margin-top: 5.3125rem;
 }
 
-.accordion__button__text {
+.profession__accordion p {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -203,27 +217,28 @@ body::-webkit-scrollbar-thumb {
   color: #413954;
 }
 
-.accordion__button:after {
-  content: '\02795';
+.profession__accordion:after {
+  content: '+';
   /* Unicode character for "plus" sign (+) */
-  font-size: 0.9375rem;
-  color: #000;
+  color: #413954;
+  font-weight: 700;
+  font-size: 1.5rem;
   float: right;
 }
 
-.accordion_button_sactive:after {
-  content: "\2796";
+.profession__accordion_active:after {
+  content: "-";
   /* Unicode character for "minus" sign (-) */
 }
 
-.accordion__info {
+.profession__info {
   background-color: #f5f5f5;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
   height: 0;
 }
 
-.accordion__text {
+.profession__text {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -233,11 +248,11 @@ body::-webkit-scrollbar-thumb {
   margin-top: 3.125rem;
 }
 
-.accordion__text + .accordion__text {
+.profession__text + .profession__text {
   margin: 0;
 }
 
-.accordion__subtitle {
+.profession__subtitle {
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
@@ -246,7 +261,7 @@ body::-webkit-scrollbar-thumb {
   color: #413954;
 }
 
-.accordion__list li {
+.profession__list li {
   font-family: Inter;
   font-style: normal;
   font-weight: 400;
@@ -255,19 +270,19 @@ body::-webkit-scrollbar-thumb {
   color: #9F9F9F;
 }
 
-.accordion__text + .accordion__subtitle {
+.profession__text + .profession__subtitle {
   margin-top: 3.75rem;
 }
 
-.accordion__subtitle + .accordion__list {
+.profession__subtitle + .profession__list {
   margin-top: 1.25rem;
 }
 
-.accordion__list + .accordion__subtitle {
+.profession__list + .profession__subtitle {
   margin-top: 1.25rem;
 }
 
-.accordion__endButton {
+.profession__endButton {
   width: 17.5rem;
   height: 4.125rem;
   background: linear-gradient(90deg, #7137FF, #BF99FF);
@@ -275,7 +290,7 @@ body::-webkit-scrollbar-thumb {
   margin: 5rem 0;
 }
 
-.accordion__endButton__text {
+.profession__endButton p {
   font-family: Suisse Intl;
   font-style: normal;
   font-weight: 600;
@@ -285,23 +300,6 @@ body::-webkit-scrollbar-thumb {
   text-decoration-line: underline;
   text-transform: uppercase;
   color: #FFFFFF;
-}
-
-.category {
-  margin-top: 6.25rem;
-}
-
-.category__button {
-  width: 7.25rem;
-  height: 2.625rem;
-  background-color: #EFEFEF;
-  border-radius: 93px;
-  margin-right: 1.5625rem;
-}
-
-.category__button:focus {
-  background: linear-gradient(90deg, #7137FF, #BF99FF);
-  color: #fff;
 }
 
 .main {
@@ -323,11 +321,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .intro__desc {
-  width: 25rem;
+  max-width: 25rem;
   margin-top: 4.8125rem;
 }
 
-.intro__desc__text {
+.intro__text {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -339,7 +337,7 @@ body::-webkit-scrollbar-thumb {
 .intro__picture {
   width: 100%;
   height: 43.75rem;
-  object-fit: contain;
+  object-fit: cover;
   margin-top: 4.8125rem;
 }
 

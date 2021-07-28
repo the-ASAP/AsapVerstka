@@ -1,8 +1,8 @@
-.category {
+.profession__choice {
     margin-top: 6.25rem;
 }
 
-.category__button {
+.profession__choice__button {
     width: 7.25rem;
     height: 2.625rem;
     background-color: #EFEFEF;
@@ -10,11 +10,11 @@
     margin-right: 1.5625rem;
 }
 
-// .category__button:hover {
+// .profession__choice__button:hover {
 //     linear-gradient(90deg, #7137FF, #BF99FF);
 // }
 
-.category__button:focus {
+.profession__choice__button:focus {
     background: linear-gradient(90deg, #7137FF, #BF99FF);
     color: #fff
 }
