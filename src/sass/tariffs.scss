@@ -1,0 +1,159 @@
+.tariffs {
+    width: 100%;
+    background: radial-gradient(91.03% 223.07% at 8.97% 0%, #7137FF 2.73%, #BF99FF 100%);
+    margin-top: 8.6875rem;
+    padding: 6.4375rem 0 9.375rem;
+
+    &__title {
+        max-width: 45rem;
+        display: block;
+        margin: 0 auto;
+
+        font-family: Inter sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.5rem;
+        line-height: 1.25;
+        text-align: center;
+
+        color: #EFEFEF;
+
+    }
+
+    &__subtitle {
+        max-width: 26.25rem;
+        height: 125px;
+        display: block;
+        margin: 2.8125rem auto 0;
+
+        font-family: Inter sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 175%;
+        text-align: center;
+        color: #EFEFEF;
+    }
+
+    &__wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5rem;
+    }
+}
+
+.tariffsCard {
+    border: 1px solid #FCFCFC;
+    padding: 2.5rem 2.875rem 0;
+
+    &__word {
+        font-family: Inter sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 175%;
+        color: #EFEFEF;
+
+        opacity: 0.6;
+    }
+
+    &__title {
+        margin-top: 0.75rem;
+
+        font-family: Inter sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3.8125rem;
+        line-height: 1.57;
+
+        color: #EFEFEF;
+    }
+
+    &__items {
+        height: 22rem;
+    }
+    &__item {
+        margin-top: 2.1875rem;
+        list-style: none;
+        max-width: 17.8125rem;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 175%;
+
+        color: #F9F9F9;
+        
+        &_bold {
+            font-weight: 700;
+        }
+    }
+
+    &__icon {
+        min-height: auto;
+        height: 0.625rem;
+        position: relative;
+        margin-right: 1.125rem;
+    }
+}
+
+.tariffsCard__item + .tariffsCard__item {
+    margin-top: 1.4375rem;
+}
+
+.consultation {
+    width: 100%;
+    margin-top: 8.5625rem;
+    border-top: 1px solid #fefefe;
+
+    &__word {
+        margin-top: 1.25rem;
+
+        font-family: Inter sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 175%;
+
+        color: #F9F9F9;
+
+        opacity: 0.4;
+    }
+
+    &__price {
+        margin-top: 0.625rem;
+        
+        font-family: Inter sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.5625rem;
+        line-height: 1.6;
+
+        color: #F9F9F9;
+    }
+
+    &__button {
+        width: 100%;
+        height: 4.6875rem;
+        border: 1px solid #F9F9F9;
+        border-radius: 2px;
+        margin-top: 3.75rem;
+
+        font-family: Suisse Intl sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 130.5%;
+
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+
+        color: #F9F9F9;
+
+        margin-bottom: 2.5rem;
+    }
+}

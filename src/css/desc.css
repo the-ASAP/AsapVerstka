@@ -1,0 +1,70 @@
+.desc {
+  margin-top: 7.25rem;
+}
+
+.desc__subtitle {
+  max-width: 44rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 1.25;
+  color: #413954;
+}
+
+.desc__subtitle_gradient {
+  background: linear-gradient(90deg, #7137FF, #BF99FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills {
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.skill {
+  width: 100%;
+  border-top: 1px solid #CECECE;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill__number,
+.skill__title {
+  margin-top: 2.0625rem;
+  width: calc(100% / 3);
+  font-family: Inter sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5625rem;
+  line-height: 200%;
+  color: #39314C;
+}
+
+.skill__title {
+  margin-top: 2.1875rem;
+  padding-right: 12rem;
+  color: #413954;
+}
+
+.skill__description {
+  width: calc(100%/3);
+  margin-top: 3.0625rem;
+  margin-bottom: 5rem;
+  padding-right: 3.125rem;
+}
+
+.skill__description__text {
+  max-width: 34.375rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 175%;
+  color: #413954;
+}
+
+.skill__description__text + .skill__description__text {
+  margin-top: 1.5625rem;
+}

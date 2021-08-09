@@ -1,0 +1,119 @@
+.analytics {
+    margin-top: 9.125rem;
+    padding: 6.125rem 5rem 0;
+    background: radial-gradient(91.03% 223.07% at 8.97% 0%, #7137FF 2.73%, #BF99FF 100%);
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        max-width: 32.8125rem;
+        font-family: Inter sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 1.25;
+
+        color: #EFEFEF;
+    }
+
+    &__subtitle {
+        max-width: 35.4375rem;
+        margin-top: 1.875rem;
+
+        font-family: Inter sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5;
+        /* light */
+
+        color: #EFEFEF;
+    }
+
+    &__download {
+        margin-top: 2.5rem;
+    }
+
+    &__icon {
+        margin-right: 1.5rem;
+    }
+
+    &__download__button {
+        font-family: Suisse Intl;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 130.5%;
+        letter-spacing: 0.06em;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+
+        color: #EFEFEF;
+        cursor: pointer;
+    }
+}
+
+.form__inputName, .form__inputPhone {
+    width: 31.25rem;
+    height: 4rem;
+    display: block;
+    border-bottom: 1px solid #EFEFEF;
+
+    font-family: Inter sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    color: #EFEFEF;
+}
+.form__inputName::placeholder, .form__inputPhone::placeholder {
+    color: #EFEFEF;
+}
+
+.form__inputPhone {
+    margin-top: 2.5rem;
+}
+
+.form__inputSubmit {
+    margin-top: 3.875rem;
+    width: 17.5625rem;
+    height: 75px;
+    border: 1px solid #EFEFEF;
+    border-radius: 2px;
+
+    font-family: Suisse Intl;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 130.5%;
+
+    letter-spacing: 0.06em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+
+    /* light */
+
+    color: #EFEFEF;
+    margin-bottom: 6.8125rem;
+}
+
+.CarouselText {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-family: Inter sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18rem;
+    line-height: 79%;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #EFEFEF;
+
+    opacity: 0.1;
+}

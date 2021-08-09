@@ -1,0 +1,150 @@
+.crm__header {
+  background: #EFEFEF;
+}
+
+.crm__header__title {
+  max-width: 42rem;
+  font-family: Inter sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 1.25;
+  color: #413954;
+  padding-bottom: 6.25rem;
+}
+
+.crm__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3rem 0 5.0625rem;
+  border-bottom: 1px solid #CECECE;
+}
+
+.crm__time,
+.crm__task {
+  max-width: 25.625rem;
+  font-family: Inter sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5625rem;
+  line-height: 1.6;
+  color: #39314C;
+}
+
+.crm__taskDesc {
+  font-family: Inter sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 175%;
+  color: #39314C;
+}
+
+.motivation {
+  padding: 7.0625rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #CECECE;
+}
+
+.motivation__title {
+  max-width: 37rem;
+  font-family: Inter sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 1.25;
+  /* or 125% */
+  color: #413954;
+}
+
+.motivation__desc {
+  max-width: 33.8125rem;
+}
+
+.motivation__tuning {
+  font-family: Inter sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5625rem;
+  line-height: 1.2;
+  color: #413954;
+}
+
+.motivation__text {
+  margin-top: 2.9375rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.87;
+  color: #413954;
+}
+
+.motivation__buttons {
+  margin-top: 1.25rem;
+  display: flex;
+}
+
+.motivation__bitrix {
+  width: 170px;
+  height: 52px;
+  background: #21BBEF;
+  border-radius: 4.0513rem;
+  padding-top: 0.3125rem;
+  margin-right: 1.625rem;
+}
+
+.motivation__amoCRM {
+  width: 170px;
+  height: 52px;
+  border-radius: 4.0513rem;
+  background: #279EEE;
+}
+
+.possibilities {
+  padding: 4.0625rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "title block block" "title block block";
+}
+
+.possibilities__title {
+  grid-area: title;
+  font-family: Inter sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5625rem;
+  line-height: 1.2;
+  color: #413954;
+}
+
+.possibilities__block {
+  display: flex;
+}
+
+.possibilities__block__border {
+  width: 3.75rem;
+  height: 1px;
+  background: #CECECE;
+  margin-right: 2.125rem;
+  position: relative;
+  top: 0.625rem;
+}
+
+.possibilities__text {
+  max-width: 20rem;
+  font-family: Inter sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #413954;
+  margin-bottom: 3.75rem;
+}
+
+.violetText {
+  background: linear-gradient(90deg, #7137FF, #BF99FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

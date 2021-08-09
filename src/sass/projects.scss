@@ -1,0 +1,64 @@
+.projects {
+    width: 100%;
+    background: #EFEFEF;
+    padding: 5rem 0 5.9375rem;
+
+    &__title {
+        font-family: Inter sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.5rem;
+        line-height: 1.25;
+        color: #413954;
+    }
+
+    &__carousel {
+        margin-top: 5rem;
+    }
+}
+.carousel__projects {
+    margin-top: 5rem;
+
+    &__buttons {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2.5rem;
+    }
+}
+
+.post {
+    &__image {
+        width: 100%;
+        height: 35rem;
+        object-fit: cover;
+    }
+
+    &__title {
+        margin-top: 2.3125rem;
+
+        font-family: Inter sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 1.6;
+
+        color: #413954;
+    }
+
+    &__desc {
+        margin-top: 1.4375rem;
+        max-width: 32rem;
+
+        font-family: Inter sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 175%;
+        color: #413954;
+
+        &_underline {
+            text-decoration: underline;
+        }
+    }
+}
