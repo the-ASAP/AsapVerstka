@@ -199,6 +199,7 @@ gulp.task('webp', function() {
     return gulp.src(['src/img/**/*', '!src/img/icons/*'])
         .pipe(webp())
         .pipe(gulp.dest('build/img'))
+        .pipe(ghPages())
 });
 
 // dest
@@ -214,12 +215,6 @@ gulp.task('dest', function() {
         .pipe(reload({ stream: true }));
 });
 // end dest
-
-// gulp.task('ghPage', function() {
-//     return gulp.src('./build/**/*')
-//         .pipe(ghPages())  
-// })
-
 //dev build
 gulp.task('devbuild', gulp.series(
     'buildHtml',
@@ -231,7 +226,6 @@ gulp.task('devbuild', gulp.series(
     'dest',
     'webp',
     'corr',
-    // 'ghPage'
 ));
 //dev build
 //production build
@@ -272,7 +266,6 @@ gulp.task('modxWebserver', function() {
         '!./src/*.html'
     ], gulp.series('dest'));
 });
-
 
 gulp.task('webserver', function() {
     browserSync.init({

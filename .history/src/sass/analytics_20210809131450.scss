@@ -2,8 +2,7 @@
     margin-top: 9.125rem;
     padding: 6.125rem 5rem 0;
     background: radial-gradient(91.03% 223.07% at 8.97% 0%, #7137FF 2.73%, #BF99FF 100%);
-    overflow: hidden;
-    
+
     &__info {
         display: flex;
         justify-content: space-between;
@@ -104,15 +103,14 @@
 
 .CarouselText {
     position: absolute;
-    bottom: 0;
-    left: -2.1875rem;
+    top: 0;
+    left: 0;
 
-    white-space: nowrap;
     font-family: Inter sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18rem;
-    line-height: 68%;
+    line-height: 79%;
     letter-spacing: -0.015em;
     text-transform: uppercase;
     color: #EFEFEF;

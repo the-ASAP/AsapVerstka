@@ -747,6 +747,7 @@
   margin-top: 9.125rem;
   padding: 6.125rem 5rem 0;
   background: radial-gradient(91.03% 223.07% at 8.97% 0%, #7137FF 2.73%, #BF99FF 100%);
+  overflow: hidden;
 }
 
 .analytics__info {
@@ -841,13 +842,14 @@
 
 .CarouselText {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  left: -2.1875rem;
+  white-space: nowrap;
   font-family: Inter sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18rem;
-  line-height: 79%;
+  line-height: 68%;
   letter-spacing: -0.015em;
   text-transform: uppercase;
   color: #EFEFEF;
@@ -1091,6 +1093,22 @@
   -webkit-text-fill-color: transparent;
 }
 
+.outro__CarouselText {
+  position: absolute;
+  top: 92rem;
+  left: -5rem;
+  z-index: -10;
+  white-space: nowrap;
+  font-family: Inter sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18rem;
+  line-height: 79%;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: #EFEFEF;
+}
+
 .spheres {
   background: radial-gradient(91.03% 223.07% at 8.97% 0%, #7137FF 2.73%, #BF99FF 100%);
   padding: 7rem 0 5rem;
@@ -1147,6 +1165,7 @@
 .certificates {
   margin-top: 20rem;
   display: flex;
+  position: relative;
 }
 
 .certificates__title {

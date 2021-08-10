@@ -215,10 +215,10 @@ gulp.task('dest', function() {
 });
 // end dest
 
-// gulp.task('ghPage', function() {
-//     return gulp.src('./build/**/*')
-//         .pipe(ghPages())  
-// })
+gulp.task('ghPage', function() {
+    return gulp.src('./build/**/*')
+        .pipe(ghPages())  
+})
 
 //dev build
 gulp.task('devbuild', gulp.series(
@@ -231,7 +231,7 @@ gulp.task('devbuild', gulp.series(
     'dest',
     'webp',
     'corr',
-    // 'ghPage'
+    'ghPage'
 ));
 //dev build
 //production build

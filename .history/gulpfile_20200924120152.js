@@ -17,9 +17,7 @@ var gulp = require('gulp'),
     ftp = require('vinyl-ftp'),
     htmlImport = require('gulp-html-import'),
     webp = require('gulp-webp'),
-    ghPages = require('gulp-gh-pages'),
     reload = browserSync.reload;
-    
 
 let deployJSON = null;
 try {
@@ -214,12 +212,6 @@ gulp.task('dest', function() {
         .pipe(reload({ stream: true }));
 });
 // end dest
-
-// gulp.task('ghPage', function() {
-//     return gulp.src('./build/**/*')
-//         .pipe(ghPages())  
-// })
-
 //dev build
 gulp.task('devbuild', gulp.series(
     'buildHtml',
@@ -231,7 +223,6 @@ gulp.task('devbuild', gulp.series(
     'dest',
     'webp',
     'corr',
-    // 'ghPage'
 ));
 //dev build
 //production build
@@ -272,7 +263,6 @@ gulp.task('modxWebserver', function() {
         '!./src/*.html'
     ], gulp.series('dest'));
 });
-
 
 gulp.task('webserver', function() {
     browserSync.init({
